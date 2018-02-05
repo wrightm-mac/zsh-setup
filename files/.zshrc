@@ -70,17 +70,17 @@ export COLOR_GIT=green
 export COLOR_HIGHLIGHT=red
 
 # Set options for some commands...
-#export PAGER=/usr/bin/most
+export PAGER=/usr/bin/most
 export GREP_OPTIONS=--color=auto
 alias ls='ls -h --color=auto --group-directories-first'
-export LS_COLORS='di=1;32:fi=00;97:ex=1;31:ln=target:or=4;31:*.pdf=1;37:*.sh=00;31:*.conf=00;32:*.log=00;36:*.proj=1;93:*.cs=0;93:*.py=00;93:*.ts=00;93:*.js=00;93:*.min.js=04;93:*.json=00;93:*.htm=00;93:*.html=00;93:*.css=00;93:*.jade=00;93:*.md=0;93:*.jpg=0;36:*.jpeg=0;36:*.png=0;36::*.svg=0;36:*.txt=01;37:*.rtf=01;37:*.tar=4;93:*.zip=1;93:*.gz=1;93:*.deb=4;93:'
+export LS_COLORS='di=1;32:fi=00;97:ex=1;31:ln=target:or=4;31:*.pdf=1;37:*.sh=00;31:*.conf=00;32:*.log=00;36:*.proj=1;93:*.cs=0;93:*.py=00;93:*.ts=00;93:*.js=00;93:*.min.js=04;93:*.js.map=04;93:*.json=00;93:*.yml=00;93:*.yaml=00;93:*.htm=00;93:*.html=00;93:*.css=00;93:*.less=00;93:*.jade=00;93:*.md=0;93:*.jpg=0;36:*.jpeg=0;36:*.png=0;36:*.gif=0;36:*.svg=0;36:*.ico=0;36:*.txt=01;37:*.rtf=01;37:*.tar=4;93:*.zip=1;93:*.gz=1;93:*.deb=4;93:'
 export LC_COLLATE='C'
 
 # Prompt...
 autoload -Uz colors && colors
 autoload -Uz promptinit
 promptinit
-PROMPT=%B%F{$COLOR_PROMPT}%U$USERNAME%u%f:%b' ' 
+PROMPT=%B%F{$COLOR_PROMPT}%U$USERNAME%u%f:%b' '
 
 # Git stuff...
 source ~/.git-flow-completion.zsh
